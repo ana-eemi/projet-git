@@ -32,6 +32,31 @@ button:hover {
     background-color: #2980b9;
 }
 
+#shareButton {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour donner du relief */
+}
+
+#shareButton:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px); /* Légère élévation lors du survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+}
+
+#shareButton i {
+    margin-right: 8px; /* Espace entre l'icône et le texte */
+}
+
 /* Media Query pour les écrans mobiles */
 @media (max-width: 600px) {
     .container {
