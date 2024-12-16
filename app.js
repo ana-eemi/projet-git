@@ -25,3 +25,13 @@ function generateQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     document.getElementById("quote").textContent = quotes[randomIndex];
 }
+
+function shareQuote() {
+    const quote = document.getElementById("quote").textContent;
+    // Utilisation du presse-papier pour copier la citation
+    navigator.clipboard.writeText(quote).then(() => {
+        alert("Citation copiée dans le presse-papier !");
+    }).catch(err => {
+        console.error("Erreur lors de la copie : ", err);
+    });
+}
