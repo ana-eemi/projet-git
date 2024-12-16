@@ -44,3 +44,34 @@ L'objectif est de comprendre et de maîtriser les bases de la gestion de version
 1. Clonez ce dépôt :
    ```bash
    git clone git@github.com:ana-eemi/projet-git.git
+
+2. Accédez au dossier du projet :
+   cd projet-git
+
+## Utilisation
+###Workflow Git
+1. Créer une branche pour une nouvelle fonctionnalité :
+   git checkout -b feature/nom-fonctionnalité
+
+2. Travailler sur la branche et committer vos modifications :
+   git add .
+   git commit -S -m "Ajout de la fonctionnalité X"
+
+3. Pousser la branche et créer une pull request :
+   git push origin feature/nom-fonctionnalité
+
+##Contributions
+###Les contributions sont les bienvenues ! Pour contribuer :
+
+1. Forkez le projet.
+2. Créez une branche pour votre fonctionnalité ou correction :
+   git checkout -b feature/ma-contribution
+3. Envoyez une pull request en expliquant vos changements.
+
+Consultez le fichier CONTRIBUTING.md pour plus de détails.
+
+##Licence
+Ce projet est sous licence MIT. Consultez le fichier LICENSE pour plus d’informations.
+
+##Auteur
+Anaïs Chazelas
