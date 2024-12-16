@@ -40,7 +40,7 @@ Ce Code de Conduite s'applique à tous les espaces du projet, y compris les dép
 
 ## Signalement d'incidents
 
-Les comportements abusifs, harcelants ou inacceptables peuvent être signalés en contactant l'équipe du projet à l'adresse suivante : **[email@example.com]**. Tous les signalements seront examinés et étudiés avec sérieux, dans la confidentialité et sans représailles envers les auteurs des signalements.
+Les comportements abusifs, harcelants ou inacceptables peuvent être signalés en contactant l'équipe du projet à l'adresse suivante : **anais.chazelas@eemi.com**. Tous les signalements seront examinés et étudiés avec sérieux, dans la confidentialité et sans représailles envers les auteurs des signalements.
 
 Les mainteneurs du projet s'engagent à respecter la vie privée et la sécurité de toute personne signalant un incident.
 
