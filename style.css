@@ -30,3 +30,26 @@ button {
 button:hover {
     background-color: #2980b9;
 }
+
+/* Media Query pour les écrans mobiles */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    #shareButton {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
