@@ -24,6 +24,12 @@ const quotes = [
 function generateQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     document.getElementById("quote").textContent = quotes[randomIndex];
+
+    // Changer le fond avec un dégradé aléatoire
+    const randomGradient = Math.floor(Math.random() * gradients.length);
+    document.body.style.background = gradients[randomGradient];
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundPosition = "center center";
 }
 
 function shareQuote() {
@@ -35,3 +41,15 @@ function shareQuote() {
         console.error("Erreur lors de la copie : ", err);
     });
 }
+
+// Tableau de dégradés CSS
+const gradients = [
+    "linear-gradient(to right, #ff7e5f, #feb47b)",   // Dégradé orange-rose
+    "linear-gradient(to right, #6a11cb, #2575fc)",   // Dégradé bleu-violet
+    "linear-gradient(to right, #ff6a00, #ee0979)",   // Dégradé rouge-rose
+    "linear-gradient(to right, #00c6ff, #0072ff)",   // Dégradé bleu clair
+    "linear-gradient(to right, #ff9a9e, #fad0c4)",   // Dégradé pastel
+    "linear-gradient(to right, #00b4db, #0083b0)",   // Dégradé bleu océan
+    "linear-gradient(to right, #a8ff78, #78ffd6)",   // Dégradé vert clair
+    "linear-gradient(to right, #c2e9fb, #a1c4fd)"    // Dégradé bleu clair
+];
