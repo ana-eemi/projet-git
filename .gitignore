@@ -1,0 +1,27 @@
+# Ignorer les fichiers de logs
+*.log
+
+# Ignorer les fichiers de configuration locaux
+.env
+config/settings_local.json
+
+# Ignorer les dépendances des projets Node.js
+node_modules/
+
+# Ignorer les fichiers compilés et temporaires
+*.class
+*.pyc
+*.swp
+
+# Ignorer les fichiers générés par le système d'exploitation
+.DS_Store
+Thumbs.db
+
+# Ignorer les fichiers générés par les éditeurs/IDE
+.idea/
+.vscode/
+*.iml
+
+# Ignorer les fichiers générés par Git
+.git/
+.gitignore~
