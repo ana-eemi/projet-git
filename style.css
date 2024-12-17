@@ -10,7 +10,9 @@ body {
 }
 
 .container {
-    text-align: center;
+    display: flex;
+    flex-direction: column; /* Les éléments restent empilés */
+    align-items: center;    /* Centre tous les éléments horizontalement */
     background-color: white;
     padding: 30px;
     border-radius: 10px;
@@ -78,8 +80,7 @@ button:hover {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    margin-top: 20px;
-    margin-left: 10px;
+    margin-top: 20px; /* Supprimer margin-left */
     transition: all 0.3s ease-in-out;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
