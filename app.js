@@ -21,15 +21,39 @@ const quotes = [
     "Il n'y a pas de raccourci vers n'importe où qui en vaille la peine. - Beverly Sills"
 ];
 
+// Variable pour garder la trace des citations précédentes
+let quoteHistory = [];
+let currentQuote = "";
+
 function generateQuote() {
+    // Ajouter la citation actuelle dans l'historique avant de changer
+    if (currentQuote) {
+        quoteHistory.push(currentQuote);
+    }
+    
+    // Générer une citation aléatoire
     const randomIndex = Math.floor(Math.random() * quotes.length);
-    document.getElementById("quote").textContent = quotes[randomIndex];
+    currentQuote = quotes[randomIndex];
+    document.getElementById("quote").textContent = currentQuote;
 
     // Changer le fond avec un dégradé aléatoire
     const randomGradient = Math.floor(Math.random() * gradients.length);
     document.body.style.background = gradients[randomGradient];
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundPosition = "center center";
+
+    document.getElementById("previousButton").disabled = quoteHistory.length === 0;
+}
+
+function previousQuote() {
+    if (quoteHistory.length > 0) {
+        // Restaurer la dernière citation de l'historique
+        currentQuote = quoteHistory.pop();
+        document.getElementById("quote").textContent = currentQuote;
+
+        // Désactiver le bouton si l'historique devient vide
+        document.getElementById("previousButton").disabled = quoteHistory.length === 0;
+    }
 }
 
 function shareQuote() {

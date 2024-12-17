@@ -57,6 +57,32 @@ button:hover {
     margin-right: 8px; /* Espace entre l'icône et le texte */
 }
 
+#previousButton {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#previousButton:hover {
+    background-color: #d68910;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#previousButton:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
 /* Media Query pour les écrans mobiles */
 @media (max-width: 600px) {
     .container {
