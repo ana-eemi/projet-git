@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de citations</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome -->
+</head>
+<body>
+    <div class="container">
+        <h1>Générateur de citations aléatoires</h1>
+        <p id="quote">Cliquez sur le bouton pour une citation inspirante !</p>
+        <p id="author" class="author">- Auteur</p>
+        <button onclick="generateQuote()">Générer une Citation</button>
+        <button id="previousButton" onclick="previousQuote()">Citation Précédente</button>
+        <button id="shareButton" onclick="shareQuote()"><i class="fas fa-share-alt"></i> Partager la Citation</button>
+        <button id="themeToggle" onclick="toggleTheme()"><i id="themeIcon" class="fas fa-sun"></i></button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
