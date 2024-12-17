@@ -81,3 +81,30 @@ const gradients = [
     "linear-gradient(to right, #a8ff78, #78ffd6)",   // Dégradé vert clair
     "linear-gradient(to right, #c2e9fb, #a1c4fd)"    // Dégradé bleu clair
 ];
+
+function toggleTheme() {
+    const body = document.body;
+
+    // Bascule entre les classes "dark-mode" et normale
+    body.classList.toggle("dark-mode");
+
+    // Mise à jour du texte du bouton
+    const themeToggleButton = document.getElementById("themeToggle");
+    const isDarkMode = body.classList.contains("dark-mode");
+    themeToggleButton.textContent = isDarkMode ? "Mode Clair" : "Mode Sombre";
+
+    // Enregistrer la préférence dans localStorage
+    localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+}
+
+// Appliquer le thème au chargement de la page
+function applySavedTheme() {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+        document.getElementById("themeToggle").textContent = "Mode Clair";
+    }
+}
+
+// Appeler la fonction pour appliquer le thème au chargement
+applySavedTheme();
