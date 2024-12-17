@@ -84,14 +84,14 @@ const gradients = [
 
 function toggleTheme() {
     const body = document.body;
+    const themeIcon = document.getElementById("themeIcon");
 
     // Bascule entre les classes "dark-mode" et normale
     body.classList.toggle("dark-mode");
 
-    // Mise à jour du texte du bouton
-    const themeToggleButton = document.getElementById("themeToggle");
+    // Mise à jour de l'icône et du texte du bouton
     const isDarkMode = body.classList.contains("dark-mode");
-    themeToggleButton.textContent = isDarkMode ? "Mode Clair" : "Mode Sombre";
+    themeIcon.classList = isDarkMode ? "fas fa-moon" : "fas fa-sun"; // Change l'icône en fonction du mode
 
     // Enregistrer la préférence dans localStorage
     localStorage.setItem("theme", isDarkMode ? "dark" : "light");
@@ -102,7 +102,7 @@ function applySavedTheme() {
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme === "dark") {
         document.body.classList.add("dark-mode");
-        document.getElementById("themeToggle").textContent = "Mode Clair";
+        document.getElementById("themeIcon").classList = "fas fa-moon"; // Afficher l'icône de la lune
     }
 }
 
